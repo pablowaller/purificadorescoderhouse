@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Ponete en contacto con nosotros así te enviamos un purificador, ya sea comprándolo o alquilándolo.">
+    <meta name="keywords"
+        content="PURIFICADORES DE AIRE, EMPRESA PURIFICADORES, COMPRAR PURIFICADORES DE AIRE, ALQUILAR PURIFICADORES DE AIRE, PURIFICADOR ANTI-COVID-19 ">
+    <title>Carrito 🛒</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/demosass.css">
+    <style>
+        
+
+.items {
+  display: flex;
+  flex-direction: row;
+  margin-left: -200px;
+}
+
+
+@media (max-width: 768px) {
+  .items{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    height: 50%;
+    width: 50px;
+    margin-left: -50px;
+  }
+  
+  #columna {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.item {
+  padding: 30px;
+}
+
+.item-title {
+  text-align: center;
+}
+
+.item-button {
+  margin-left: -200px;
+}
+
+.item-price {
+  text-align: right;
+  margin-top: -30px;
+}
+
+
+.carrito-image {
+  height: 80px; 
+  width: 100px;
+}
+
+.carrito-input-de-cantidad {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-h1">Carrito 🛒</h1>
+    </header>
+    <nav>
+        <div class="btn btn-group">
+            <div class="btn-group flex-wrap">
+                <button type="button" class="btn btn-primary" id="botonmenu"><a href="../index.html"
+                        id="botonmenu">INICIO</a></button>
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                    id="botonmenu">PRODUCTOS </button>
+                <div class="dropdown-menu">
+                    <a href="purificadorurhaf.html" class="dropdown-item">PURIFICADOR URHAF</a>
+                    <a href="purificadormovil.html" class="dropdown-item">PURIFICADOR MÓVIL</a>
+                    <a href="purificador150.html" class="dropdown-item">PURIFICADOR 150M²</a>
+                </div>
+                <button type="button" class="btn btn-primary" id="botonmenu" style="background-color: #0069d9;"><a
+                        href="contacto.html" id="botonmenu">CARRITO</a></button>
+                <button type="button" class="btn btn-primary" id="botonmenu"><a href="quienessomos.html"
+                        id="botonmenu">QUIÉNES SOMOS</a></button>
+            </div>
+        </div>
+    </nav>
+    <section id="columna">
+        <h2>Elegí el producto que quieras comprar.</h2>
+        <section class="galeria">
+            <div class="container">
+                <div class="items">
+                    <div class="row">
+                        <div class="item">
+                            <h3 class="item-title">PURIFICADOR URHAF</h3>
+                            <img src="../imagenes/urhaf.jpg" height="80px" width="100px" class="item-image"
+                                style="display: none;" />
+                            <img src="../imagenes/Purificador URHAF.jpg" height="250" width="500">
+                            <div class="item-details">
+                                <button type="button" class="item-button btn btn-primary addToCarrito">
+                                    AÑADIR AL CARRITO 🛒
+                                </button>
+                                <h4 class="item-price" id="botonyprecio"><b>$35000</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="item">
+                            <h3 class="item-title">PURIFICADOR MÓVIL</h3>
+                            <img src="../imagenes/movil.jpg" height="80px" width="100px" class="item-image"
+                                style="display: none;" />
+                            <img src="../imagenes/Purificador Móvil.jpg" height="250" width="500">
+                            <div class="item-details">
+                                <button type="button" class="item-button btn btn-primary addToCarrito">
+                                    AÑADIR AL CARRITO 🛒
+                                </button>
+                                <h4 class="item-price" id="botonyprecio"><b>$20000</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="item">
+                            <img src="../imagenes/150m2.jpg" height="80px" width="100px" class="item-image"
+                                style="display: none;" />
+                            <h3 class="item-title">PURIFICADOR 150M²</h3>
+                            <img src="../imagenes/Purificador 150m2.jpg" height="250" width="500">
+                            <div class="item-details">
+                                <button type="button" class="item-button btn btn-primary addToCarrito">
+                                    AÑADIR AL CARRITO 🛒
+                                </button>
+                                <h4 class="item-price" id="botonyprecio"><b>$50000</b></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="carrito" id="columna">
+            <div class="container">
+                <h1>CARRITO</h1>
+                <hr>
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="carrito-header">
+                            <h6>Producto</h6>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="carrito-header">
+                            <h6 class="text-truncate">Precio</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="carrito-header">
+                            <h6>Cantidad</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carrito-items carritoItemsContainer">
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="carrito-total d-flex align-items-center">
+                            <p class="mb-0">Total</p>
+                            <p class="ml-4 mb-0 carritoTotal">$0.00</p>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span>✅</span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body text-white">
+                                    Se aumentó correctamente la cantidad
+                                </div>
+                            </div>
+                            <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                data-target="#comprarModal">Comprar</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="comprarModalLabel">¡Gracias por su compra!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Pronto recibirá su pedido</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                    style="background-color: green">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+    <footer>
+        <h3><small><b>Seguinos en nuestras redes</b></small></h3>
+        <a href="https:facebook.com" target="_BLANK"><img alt="Facebook" src="../imagenes/facebook.png" title="Facebook"
+                height="25px" width="25px" class="socialmedia"></a>
+        <a href="https://twitter.com/" target="_BLANK"><img alt="Twitter" src="../imagenes/twitter.png" title="Twitter"
+                height="25px" width="30px" class="socialmedia"></a>
+        <a href="https://www.instagram.com/" target="_BLANK"><img alt="Instagram" src="../imagenes/instagram.png"
+                title="Instagram" height="25px" width="25px" class="socialmedia"></a>
+        <h3><small><b>Copyright © - Todos los derechos reservados</b></small></h3>
+    </footer>
+    <script src="../js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
