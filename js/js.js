@@ -33,7 +33,7 @@ function agregarItemAlCarrito(itemTitle, itemPrice, itemImage) {
             let elementoCantidad = elementsTitle[i].parentElement.parentElement.parentElement.querySelector('.carritoItemCantidad');
             console.log(elementsTitle[i].innerText)
             elementoCantidad.value++;
-            $('.toast').fadeIn(1500);
+            $('.toast').toast('show');
             actualizarCarritoTotal();
             return;
         }
@@ -98,7 +98,7 @@ function actualizarCarritoTotal() {
         );
         total = total + carritoItemPrecio * carritoItemCantidad;
     });
-    carritoTotal.innerHTML = `${total}$`;
+    carritoTotal.innerHTML = `${total.toFixed(2)}$`;
 }
 
 function removeCarritoItem(event) {
@@ -119,4 +119,3 @@ function comprarButtonClicked() {
     carritoItemsContainer.innerHTML = '';
     actualizarCarritoTotal();
 }
-
