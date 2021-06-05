@@ -218,7 +218,7 @@ section {
 @media (max-width: 768px) {
 
   .table {
-    width: 50%;
+    height: 20%;
   }
   
   #imagenpurificador {
