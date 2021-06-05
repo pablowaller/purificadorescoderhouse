@@ -341,15 +341,6 @@ footer {
 .single-featured-image-header img {
   animation: zoominoutsinglefeatured 15s forwards; }
 
-.displaypurificadores--1 {
-  border-radius: 25px 25px 25px 25px;
-  transition: all 1s; 
-}
-
-.displaypurificadores--1:hover {
-  height: 348px;
-  width: 700px; }
-
 .grid__imagen {
   transition: all 1s; }
 
