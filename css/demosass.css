@@ -265,13 +265,9 @@ section {
 @media (max-width: 768px) {
   .items{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: auto;
   }
-}
-
-.item {
-  padding: 30px;
 }
 
 .item-title {
@@ -279,7 +275,8 @@ section {
 }
 
 .item-button {
-  margin-left: -200px;
+  width: 20px;
+  margin-left: auto;
 }
 
 .item-price {
