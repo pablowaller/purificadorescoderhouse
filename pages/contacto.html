@@ -11,32 +11,6 @@
     <title>Carrito 🛒</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/demosass.css">
-    <style>
-        .items {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .item {
-            padding: 30px;
-        }
-        
-        .item-title {
-            text-align: center;
-        }
-
-        .item-price {
-            text-align: right;
-            margin-top: -30px;
-        }
-        
-        .carrito-image {
-            height: 80px;
-            width: 100px;
-        }
-        
-
-    </style>
 </head>
 
 <body>
@@ -62,19 +36,18 @@
             </div>
         </div>
     </nav>
-    <section id="columna">
+    <section>
         <h2>Elegí el producto que quieras comprar.</h2>
-        <section class="galeria">
-            <div class="container">
+
                 <div class="items">
                     <div class="row">
                         <div class="item">
                             <h3 class="item-title">PURIFICADOR URHAF</h3>
                             <img src="../imagenes/urhaf.jpg" height="80px" width="100px" class="item-image"
                                 style="display: none;" />
-                            <img class="img" src="../imagenes/Purificador URHAF.jpg" width="25%">
+                            <img class="image" src="../imagenes/Purificador URHAF.jpg">
                             <div class="item-details">
-                                <button type="button" class="item-button btn btn-primary addToCarrito">
+                                <button type="button" class="item-button btn btn-primary addToCarrito" id='boton'>
                                     AÑADIR AL CARRITO 🛒
                                 </button>
                                 <h4 class="item-price" id="botonyprecio"><b>$35000</b></h4>
@@ -88,9 +61,9 @@
                             <h3 class="item-title">PURIFICADOR MÓVIL</h3>
                             <img src="../imagenes/movil.jpg" height="80px" width="100px" class="item-image"
                                 style="display: none;" />
-                            <img class="img" src="../imagenes/Purificador Móvil.jpg" width="25%">
+                            <img class="image" src="../imagenes/Purificador Móvil.jpg">
                             <div class="item-details">
-                                <button type="button" class="item-button btn btn-primary addToCarrito">
+                                <button type="button" class="item-button btn btn-primary addToCarrito" id='boton'>
                                     AÑADIR AL CARRITO 🛒
                                 </button>
                                 <h4 class="item-price" id="botonyprecio"><b>$20000</b></h4>
@@ -103,21 +76,18 @@
                             <img src="../imagenes/150m2.jpg" height="80px" width="100px" class="item-image"
                                 style="display: none;" />
                             <h3 class="item-title">PURIFICADOR 150M²</h3>
-                            <img class="img" src="../imagenes/Purificador 150m2.jpg" width="25%">
+                            <img class="image" src="../imagenes/Purificador 150m2.jpg">
                             <div class="item-details">
-                                <button type="button" class="item-button btn btn-primary addToCarrito">
+                                <button type="button" class="item-button btn btn-primary addToCarrito" id='boton'>
                                     AÑADIR AL CARRITO 🛒
                                 </button>
                                 <h4 class="item-price" id="botonyprecio"><b>$50000</b></h4>
                             </div>
                         </div>
                     </div>
-
-                </div>
             </div>
 
-        </section>
-        <section class="carrito" id="columna">
+        <div class="carrito">
             <div class="container">
                 <h1>CARRITO</h1>
                 <hr>
@@ -192,7 +162,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </section>
     <hr>
     <footer>
