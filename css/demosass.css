@@ -2,6 +2,8 @@ body {
   background-image: url("../imagenes/20929.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  text-align: center;
+	justify-content: center;
   overflow-x: hidden;
 	max-width:100vw;
 }
@@ -40,13 +42,6 @@ body {
 .carousel-inner__imagenes:hover {
   height: 524;
   width: 1052px; 
-}
-
-@media (max-width: 768px) {
-  .carousel-inner__imagenes:hover {
-    height: 179px;
-    width: 350px; 
-  } 
 }
 
 #col {
@@ -100,76 +95,9 @@ footer {
   border-radius: 0px 0px 25px 25px; 
 }
 
-@media (max-width: 768px) {
-
-  .titulo-h1 {
-    font-size: 30px;
-  }
-
-  .subtitulo-h2 {
-    font: 18px "Roboto", sans-serif;
-    text-align: center; 
-  }
-
-  #botonmenu {
-    font: 18px "Roboto", sans-serif;
-    width: 160px;
-  }
-
-  .dropdown-menu {
-    width: 27%;
-  }
-
-  .dropdown-item {
-    font: 12px "Roboto", sans-serif;
-  }
-  
-}
-
-@media (max-width: 500px) {
-  .dropdown-menu {
-    width: 50%;
-  }
-}
-
-@media (max-width: 320px) {
-  .dropdown-menu {
-    width: 100%;
-  }
-}
-
-
 section {
   justify-content: center;
   text-align: center;
-}
-
-.carrito-input-de-cantidad {
-	max-width: 45px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background: #eee;
-        padding-left: 10%;
-}
-
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 10px;
-  } 
-
-  h2 {
-    font-size: 16px;
-  } 
-
-  h3 {
-    font-size: 15px;
-  } 
-
-  h4 {
-    font-size: 12px;
-  } 
-
 }
 
 .texto__correcto--1 {
@@ -202,7 +130,9 @@ section {
   border-radius: 0px 0px 25px 25px; 
 }
 
-#imagenpurificador {
+.imagenpurificador {
+  height: 316px;
+  width: 650px;
   border-radius: 25px 25px 25px 25px; 
 }
 
@@ -212,80 +142,38 @@ section {
   justify-content: space-around; 
 }
 
-.displaypurificadores--2 {
+.displaypurificadores--1 {
   justify-content: space-around; 
   border-radius: 25px 25px 25px 25px;
-}
-
-.displaypurificadores--3 {
-  justify-content: space-around; 
-  border-radius: 25px 25px 25px 25px;
-}
-
-@media (max-width: 768px) {
-
-  .table {
-    height: 20%;
-  }
-  
-  #imagenpurificador {
-    width: 50%;
-    border-radius: 25px 25px 25px 25px; 
-  }
-
-  #imagenpurificador2 {
-    height: 25%;
-    width: 100%;
-    margin-top: 60px;
-    border-radius: 25px 25px 25px 25px; 
-  }
-
-  .displaypurificadores { 
-    display: flex;
-    flex-direction: column;
-  }
-
-  .displaypurificadores--1 {
-    height: 100%;
-    width: 100%;
-    padding-top: 25px;
-  }
-
-  .displaypurificadores--2 {
-    height: 25%;
-    width: 100%;
-  }
-
-  .displaypurificadores--3 {
-    height: 25%;
-    width: 100%;
-  }
+  width: 45%;
 }
 
 .items {
   display: flex;
   flex-direction: row;
-  margin-left: -200px;
+  margin-top: -1%;
 }
 
-
-@media (max-width: 768px) {
-  .items{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
+.item {
+  padding: 30px;
 }
 
 .item-title {
   text-align: center;
 }
 
+.image {
+  width: 100%
+}
+
+.item-button {
+  margin-left: -200px;
+}
+
 .item-price {
   text-align: right;
   margin-top: -30px;
 }
-
 
 .carrito-image {
   height: 80px; 
@@ -304,13 +192,6 @@ section {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 2fr 2fr;
-}
-
-@media (max-width: 768px) {
-  .grid__imagen {
-    height: 100px;
-    width: 100px;
-  }
 }
 
 footer {
@@ -348,6 +229,98 @@ footer {
   width: 300px; }
   
 @media (max-width: 768px) {
+
+  h1 {
+    font-size: 10px;
+  } 
+
+  h2 {
+    font-size: 16px;
+  } 
+
+  h3 {
+    font-size: 15px;
+  } 
+
+  h4 {
+    font-size: 12px;
+  } 
+
+  
+  .titulo-h1 {
+    font-size: 30px;
+  }
+
+  .subtitulo-h2 {
+    font: 18px "Roboto", sans-serif;
+    text-align: center; 
+  }
+
+  #botonmenu {
+    font: 18px "Roboto", sans-serif;
+    width: 160px;
+  }
+
+  .dropdown-menu {
+    width: 27%;
+  }
+
+  .dropdown-item {
+    font: 12px "Roboto", sans-serif;
+  }
+  
+  .dropdown-menu {
+    width: 50%;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+  
+  .carousel-inner__imagenes:hover {
+    height: 179px;
+    width: 350px; 
+  } 
+
+  .imagenjuntoatabla {
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .imagenpurificador {
+    height: 25%;
+    width: 100%;
+    margin-top: 1%;
+    border-radius: 25px 25px 25px 25px; 
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .displaypurificadores { 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .displaypurificadores--1 {
+    width: 45%;
+  }
+
+  .item {
+    padding: 20px;
+  }
+
+  #boton {
+    width: 60%;
+    margin-left: 1%
+  }
+
+  .grid__imagen {
+    height: 100px;
+    width: 100px;
+  }
+
   .grid__imagen:hover {
     height: 120px;
     width: 120px;
